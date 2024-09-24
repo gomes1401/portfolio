@@ -1,0 +1,196 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navegação */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.logo img {
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+/* Seção principal */
+.main-section {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #bef5c8, #025015);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.avatar {
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+/* Suavizar rolagem para navegadores modernos */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Outros estilos... */
+.projects-section {
+    padding: 60px 15px;
+    background-color: #fff;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-item img {
+    width: 50%;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.project-item:hover img {
+    transform: scale(1.05);
+}
+
+.project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); }
+
+    .contacts{
+        align-items: center;
+        padding: 60px 15px;
+    }
+
+    .about {
+        padding: 20px;
+        border-radius: 8px; /* Cantos arredondados */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        color: black;
+    }
+    
+    /* Estiliza o contêiner dentro da seção about */
+    .container2 {
+        display: flex;
+        flex-direction: column; /* Alinha as seções verticalmente */
+        gap: 20px; /* Espaçamento entre as seções */
+    }
+    
+    /* Estiliza cada bloco de descrição e habilidades */
+    .descricao, .habilidades {
+        background-color: #fff; /* Cor de fundo branca para os blocos */
+        padding: 20px; /* Espaçamento interno */
+        border-radius: 8px; /* Cantos arredondados */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+    
+    /* Estiliza o título dentro dos blocos */
+    .descricao h2, .habilidades h2 {
+        margin-top: 0; /* Remove a margem superior dos títulos */
+    }
+    
+    /* Estiliza a lista de habilidades */
+    .habilidades ul {
+        list-style-type: none; /* Remove os marcadores da lista */
+        padding: 0; /* Remove o padding padrão da lista */
+    }
+    
+    .habilidades li {
+        padding: 8px 0; /* Adiciona espaçamento entre os itens da lista */
+        border-bottom: 1px solid #ddd; /* Linha divisória entre os itens */
+    }
+    
+    .habilidades li:last-child {
+        border-bottom: none; /* Remove a linha divisória do último item */
+    }
+
+    .logo-top {
+        display: block; /* Garante que a imagem esteja em uma linha separada */
+        margin: 0 auto 10px auto; /* Centraliza a imagem e adiciona espaço abaixo */
+        width: 50px; /* Ajuste conforme necessário */
+        height: auto; /* Mantém a proporção da imagem */
+    }
